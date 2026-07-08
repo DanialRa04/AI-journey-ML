@@ -19,7 +19,7 @@ I compared a few ANN widths with 4-fold cross-validation on the training split a
 
 ## Setup
 
-The notebook runs with Python 3.12 plus `numpy`, `pandas`, `matplotlib`, `scikit-learn`, and `jupyter`. From the project root, open `codes/ANN.ipynb` and run all cells in order. The saved dataset path points to `../data/heart_disease_uci.csv`.
+The notebook runs with Python 3.12 plus `numpy`, `pandas`, `matplotlib`, `scikit-learn`, and `jupyter`. From the project root, open `codes/ANN.ipynb` and run all cells in order. The notebook can find `data/heart_disease_uci.csv` from the repo root, the project folder, or the `codes` folder.
 
 ## Evaluation
 

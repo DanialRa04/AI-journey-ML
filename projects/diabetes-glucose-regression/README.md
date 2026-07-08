@@ -17,7 +17,7 @@ I keep `Outcome` out of the predictors because it is too close to the glucose la
 
 ## Run
 
-Install `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, and `jupyter`, then run the notebook from the project root or open `codes/Regression.ipynb` directly. The saved path now points to `../data/diabetes.csv`.
+Install `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, and `jupyter`, then run the notebook from the project root or open `codes/Regression.ipynb` directly. The notebook can find `data/diabetes.csv` from the repo root, the project folder, or the `codes` folder.
 
 ## Evaluation
 
