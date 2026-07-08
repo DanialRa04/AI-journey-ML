@@ -4,12 +4,12 @@ I used this mini project to predict glucose from the other Pima measurements whi
 
 ## Dataset
 
-The data comes from `Dataset/diabetes.csv`. I drop rows where `Glucose` is zero because that is not a usable regression target, and I treat zero values in `BloodPressure`, `SkinThickness`, `Insulin`, and `BMI` as missing measurements.
+The data comes from `data/diabetes.csv`. I drop rows where `Glucose` is zero because that is not a usable regression target, and I treat zero values in `BloodPressure`, `SkinThickness`, `Insulin`, and `BMI` as missing measurements.
 
 ## Structure
 
-- `Codes/Regression.ipynb` keeps the executed notebook with cleaning, model comparison, and diagnostics.
-- `Dataset/diabetes.csv` is the source CSV used by the notebook.
+- `codes/Regression.ipynb` keeps the executed notebook with cleaning, model comparison, and diagnostics.
+- `data/diabetes.csv` is the source CSV used by the notebook.
 
 ## Method
 
@@ -17,7 +17,7 @@ I keep `Outcome` out of the predictors because it is too close to the glucose la
 
 ## Run
 
-Install `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, and `jupyter`, then run the notebook from the `Codes` folder so the relative dataset path works as saved.
+Install `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, and `jupyter`, then run the notebook from the project root or open `codes/Regression.ipynb` directly. The saved path now points to `../data/diabetes.csv`.
 
 ## Evaluation
 

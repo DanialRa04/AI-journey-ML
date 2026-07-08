@@ -1,0 +1,19 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Local environment files
+.env
+.venv/
+venv/
+
+# Generated notebook/project artifacts
+*.pkl
+*.joblib
+*.h5
+*.keras
+*.npy
+
+# Python and test caches
+.pytest_cache/
+.mypy_cache/

@@ -4,12 +4,12 @@ I rebuilt this project as a cleaner multiclass heart-disease study notebook. My 
 
 ## Dataset
 
-I used `Data/heart_disease_uci.csv`, which has 920 rows and the original `num` target with classes `0` to `4`. The class balance is uneven, so I track macro F1 instead of accuracy alone.
+I used `data/heart_disease_uci.csv`, which has 920 rows and the original `num` target with classes `0` to `4`. The class balance is uneven, so I track macro F1 instead of accuracy alone.
 
 ## Structure
 
-- `Codes/ANN.ipynb`: corrected notebook with saved outputs
-- `Data/heart_disease_uci.csv`: required dataset
+- `codes/ANN.ipynb`: corrected notebook with saved outputs
+- `data/heart_disease_uci.csv`: required dataset
 
 ## Method
 
@@ -19,7 +19,7 @@ I compared a few ANN widths with 4-fold cross-validation on the training split a
 
 ## Setup
 
-The notebook runs with Python 3.12 and scikit-learn. From the project root, open `Codes/ANN.ipynb` and run all cells in order.
+The notebook runs with Python 3.12 plus `numpy`, `pandas`, `matplotlib`, `scikit-learn`, and `jupyter`. From the project root, open `codes/ANN.ipynb` and run all cells in order. The saved dataset path points to `../data/heart_disease_uci.csv`.
 
 ## Evaluation
 

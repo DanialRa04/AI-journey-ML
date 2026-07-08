@@ -8,7 +8,7 @@ The notebook uses `sklearn.datasets.load_breast_cancer`, so I did not copy a CSV
 
 ## Structure
 
-- `Codes/Classification.ipynb` keeps the executed notebook with feature ranking, cross-validation, and the final holdout check.
+- `codes/Classification.ipynb` keeps the executed notebook with feature ranking, cross-validation, and the final holdout check.
 
 ## Method
 
@@ -16,7 +16,7 @@ I keep a stratified 80/20 split, inspect feature signal on the training split on
 
 ## Run
 
-Install `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, and `jupyter`, then run the notebook from the `Codes` folder.
+Install `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, and `jupyter`, then open `codes/Classification.ipynb` from the project root.
 
 ## Evaluation
 
