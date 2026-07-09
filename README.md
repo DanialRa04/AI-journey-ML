@@ -1,23 +1,29 @@
-# AI Journey: Machine Learning
+# ML Fundamentals
 
-I keep my ML fundamentals and mini projects here in one place. The fundamentals stay together, and the applied work lives under `projects/` so the repo is easier to scan.
+I used these notebooks as running notes while studying the main ideas from the course and book. I kept the saved outputs where they help me remember what each result looked like.
 
-## Repository map
+## Topics
 
-- [fundamentals/README.md](./fundamentals/README.md) for the study-note codes
-- [projects/diabetes-glucose-regression/README.md](./projects/diabetes-glucose-regression/README.md) for the glucose regression mini project
-- [projects/diabetes-classification/README.md](./projects/diabetes-classification/README.md) for the diabetes classifier comparison
-- [projects/neural-activity-regression/README.md](./projects/neural-activity-regression/README.md) for the neural activity regression study
-- [projects/breast-cancer-classification/README.md](./projects/breast-cancer-classification/README.md) for the breast cancer classification mini project
-- [projects/heart-disease-ann/README.md](./projects/heart-disease-ann/README.md) for the multiclass ANN project
-- [projects/lumpy-skin-disease-classification/README.md](./projects/lumpy-skin-disease-classification/README.md) for the lumpy skin disease classification project
+- [ML_Overview.ipynb](./codes/ML_Overview.ipynb) covers my first pass through NumPy, pandas, plotting, and a simple KNN classifier.
+- [One_Hot_Encoding.ipynb](./codes/One_Hot_Encoding.ipynb) is where I practiced turning categories into model-ready columns.
+- [Linear_Regression.ipynb](./codes/Linear_Regression.ipynb) and [Regularization_methods.ipynb](./codes/Regularization_methods.ipynb) track how I studied linear models, overfitting, ridge, and lasso.
+- [Logistic_Regression.ipynb](./codes/Logistic_Regression.ipynb), [KNN_test.ipynb](./codes/KNN_test.ipynb), [KNN_regression.ipynb](./codes/KNN_regression.ipynb), and [SVM.ipynb](./codes/SVM.ipynb) cover the core supervised models I practiced first.
+- [Univariate_statistics.ipynb](./codes/Univariate_statistics.ipynb), [Iterative_selection.ipynb](./codes/Iterative_selection.ipynb), and [Model_based_selection.ipynb](./codes/Model_based_selection.ipynb) are my feature-selection notes.
+- [PCA.ipynb](./codes/PCA.ipynb) is where I studied dimensionality reduction and how PCA changes both visualization and classification.
+- [Data_Cleaning_Basics.ipynb](./codes/Data_Cleaning_Basics.ipynb) covers outliers, missing values, imputation, and simple cleaning checks.
+- [ML_Intro_Packages_KNN.ipynb](./codes/ML_Intro_Packages_KNN.ipynb) is an intro notebook for NumPy, SciPy, pandas, plotting, and a first KNN classifier.
+- [Feature_Selection_Breast_Cancer.ipynb](./codes/Feature_Selection_Breast_Cancer.ipynb) compares feature selection and dimensionality reduction methods on the breast cancer dataset.
+- [KMeans_Initialization.ipynb](./codes/KMeans_Initialization.ipynb) shows how K-Means behaves with different starting centers.
+- [Neural_Network_Hyperparameters.ipynb](./codes/Neural_Network_Hyperparameters.ipynb) compares simple TensorFlow regression networks with different widths and activations.
 
 ## Structure
 
-- `fundamentals/codes/` keeps the executed course notebooks.
-- `projects/*/codes/` keeps each project notebook.
-- `projects/*/data/` keeps only the datasets needed to rerun those notebooks.
+All course and study notebooks live in `codes/`.
 
 ## Setup
 
-Most notebooks need `numpy`, `pandas`, `matplotlib`, `seaborn`, `scikit-learn`, and `jupyter`. A few fundamentals notebooks download public datasets on first run, and the neural activity project downloads a public `.npy` file into its local `data/` folder. The neural-network hyperparameter notebook also needs `tensorflow`.
+I ran these notebooks with Python 3.12. The main packages I needed were `numpy`, `pandas`, `matplotlib`, `seaborn`, `scikit-learn`, `scipy`, `jupyter`, and `nbformat`. The neural-network hyperparameter notebook also needs `tensorflow`.
+
+## Running
+
+Start Jupyter from the repository root and open any notebook in `codes/`. Many notebooks use built-in scikit-learn datasets, but `One_Hot_Encoding.ipynb` downloads the Adult dataset from OpenML and `KNN_regression.ipynb` plus `SVM.ipynb` download the California housing dataset on first run.
